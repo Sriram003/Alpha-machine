@@ -1,0 +1,27 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner marks = new Scanner(System.in);
+	    System.out.println("Enter your marks in maths");
+//        float total = 500;
+      Float maths = marks.nextFloat();
+//        Float sci = marks.nextFloat();
+//        Float sst = marks.nextFloat();
+//        Float eng = marks.nextFloat();
+//        Float hindi = marks.nextFloat();
+        System.out.println("Enter your marks in science");
+        Float sci = marks.nextFloat();
+        System.out.println("Enter your marks in sst");
+        Float sst = marks.nextFloat();
+        System.out.println("Enter your marks in english");
+        Float eng = marks.nextFloat();
+        System.out.println("Enter your marks in hindi");
+        Float hindi = marks.nextFloat();
+        float obtained_marks = maths+sci+sst+eng+hindi;
+        Float percentage = (obtained_marks/500)* 100;
+        System.out.println("Your percentage is"+percentage);
+    }
+
+}
